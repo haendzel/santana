@@ -1,0 +1,4 @@
+.lang {
+    font-size: 22px; height: 14rem; line-height: 14rem; font-weight: 400; color: #b7b7b7;
+    @include bp(phablet) { display: none; }
+}

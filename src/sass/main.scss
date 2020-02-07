@@ -1,24 +1,33 @@
 /* UTILITIES */
-@import 'utilities/variables',
+@import 
+'utilities/variables',
 'utilities/mixins',
 'utilities/bp';
 
 /* BASE */
-@import 'base/common',
+@import 
+'base/common',
 'base/typography';
 
 /* COMPONENTS */
-//@import 
+@import 
+'components/burger',
+'components/nav',
+'components/lang',
+'components/wrapper';
 
 /* LAYOUT */
-@import 'layout/header',
+@import 
+'layout/header',
 'layout/section',
 'layout/article',
 'layout/footer';
 
 /* SECTIONS */
-/*@import 
-    'sections/team'; */
+@import 
+'sections/gallery',
+'sections/icons',
+'sections/contact';
 
 /* VENDORS */
 //nothing
