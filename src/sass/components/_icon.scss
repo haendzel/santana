@@ -1,0 +1,7 @@
+.icon { position: relative; align-items: center;
+    &:nth-child(2n+2) { background-color: #f6f6f6; }
+    min-width: 21.1rem; min-height: 21.1rem; background:#e6e6e6; margin: 0 4.6rem 4.5rem 0;
+    &:nth-child(5n+5) { margin-right: 0; }
+    &:nth-last-child(-n+5) { margin-bottom: 0; }
+    svg, img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+}
