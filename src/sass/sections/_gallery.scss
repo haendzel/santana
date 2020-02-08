@@ -1,5 +1,6 @@
 .gallery { background-color: gray; min-height: 1375px; width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start;
-    img {
+    img { 
+        @include bp(phablet) { object-fit: contain; }
         &:hover { opacity: .7; }
         &:first-of-type{ max-width: 960px;}
         &:last-of-type{ max-width: 960px;}
