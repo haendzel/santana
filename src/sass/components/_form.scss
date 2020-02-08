@@ -4,7 +4,7 @@ form { width: 100%;
     input[type=email], input[type=text], select { height: 6rem; padding: 0 0 0 2.5rem; font-size: 20px; margin-bottom: 3.5rem; }
     input[type=radio] { width: 4rem; height: 2rem; border: none; font-size: 1.6rem; }
     textarea { font-size: 20px; padding: 2.5rem 0 0 2.5rem; height: 22.5rem; }
-    select { appearance: none; width: 50rem; background: url(../../images/arrow_down.svg) no-repeat right #fff; }
+    select { @include select; width: 50rem; }
     input[type=email] { margin-bottom: 0; }
 }
 

@@ -4,6 +4,7 @@
 // Squeeze – external lines to center, then rotates. Center line scales to 0
 
 @mixin brand-svg-color { filter: invert(42%) sepia(19%) saturate(1836%) hue-rotate(203deg) brightness(95%) contrast(88%); }
+@mixin select { appearance: none; background: url(../../images/arrow_down.svg) no-repeat right #fff; }
 
 @mixin burger-squeeze {
 
