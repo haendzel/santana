@@ -11,6 +11,9 @@
 
 /* COMPONENTS */
 @import 
+'components/form',
+'components/newsletter',
+'components/social-media',
 'components/icon',
 'components/burger',
 'components/nav',
@@ -19,6 +22,8 @@
 
 /* LAYOUT */
 @import 
+'layout/row',
+'layout/col',
 'layout/header',
 'layout/section',
 'layout/footer';

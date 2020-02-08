@@ -1,6 +1,5 @@
-footer {
-    background-color: #f0f0f0; height: 30.2rem;
-    .social-media { display: none; }
-    .newsletter { display: none; }
-    img { display: none; }
+footer { height: 30.2rem; background-color: #f0f0f0;
+    .wrapper { }
+    article { display: flex; width: 100%; padding-top: 12rem; }
+
 }

@@ -1,0 +1,18 @@
+form { width: 100%; 
+    //span { display: block; width: 68px; height: 5px; border-radius: 3px; background-color: #fff; align-content: center;}
+    input, textarea, select { width: 48rem; border-radius: .8rem; color: $dark_gray_color; }
+    input[type=email], input[type=text], select { height: 6rem; padding: 0 0 0 2.5rem; font-size: 20px; margin-bottom: 3.5rem; }
+    input[type=radio] { width: 4rem; height: 2rem; border: none; font-size: 1.6rem; }
+    textarea { font-size: 20px; padding: 2.5rem 0 0 2.5rem; height: 22.5rem; }
+    select { appearance: none; width: 50rem; background: url(../../images/arrow_down.svg) no-repeat right #fff; }
+    input[type=email] { margin-bottom: 0; }
+}
+
+.form-radio { font-size: 24px; color: #fff; font-weight: 300; letter-spacing: -0.12px; text-align: left; 
+    p { padding-top: 2.5rem; }
+}
+
+.form-sending { padding-top: 8rem; color: #fff;
+    input[type=checkbox] { width: 4rem; height: 2rem; border: none; }
+    button { background: transparent; color: #fff; font-size: 30px; font-weight: 700; width: 39.6rem; height: 8.1rem; border-radius: .8rem; border: 3px solid #fff; margin-top: 5.3rem; margin-bottom: 8rem; }
+}

@@ -37,7 +37,12 @@
                         <li><a href="#" title="Kontakt">Kontakt</a></li>
                     </ul>
                 </nav>
-                <div class="lang">PL</div>
+                <div class="language">
+                    <select name="lang">
+                        <option value="pl">PL</option>
+                        <option value="en">EN</option>
+                    </select>
+                </div>
             </header>
         </div> <!-- wrapper -->
             <section class="gallery">
@@ -68,18 +73,55 @@
                     </article> 
                 </div>
             </section>
-            <section class="contact"></section>
-                <div class="wrapper"></div>
+            <section class="contact">
+                <div class="wrapper">
+                        <form action="#">
+                            <h1>Kontakt</h1>
+                            <span></span>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" id="name" name="name" placeholder="Imię"/>
+                                    <input type="email" id="email" name="email" placeholder="Adres e-mail" />
+                                    <div class="form-radio">
+                                        <p>Jestem:</p>
+                                        <input type="radio" name="who" value="klient" checked> Klientem<br>
+                                        <input type="radio" name="who" value="model"> Modelką<br>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <select name="subjects" placeholder="Wybierz temat">
+                                        <option value="subject-2">Temat 1</option>
+                                        <option value="subject-3">Temat 2</option>
+                                        <option value="subject-4">Temat 3</option>
+                                    </select>
+                                    <textarea name="message" placeholder="Treść wiadomości">Treść wiadomości</textarea>
+                                </div>
+                            </div>
+                            <div class="form-sending">
+                                <input type="checkbox" name="rodo" value="rodo">Wyrazam zgodę na przetwarzanie moich danych osobowych.<br>
+                                <button>Wyślij wiadomość</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
             <footer>
                 <div class="wrapper">
-                    <a href="/" title="Santana Photographer">
-                        <img src="images/logo.svg" alt="Logo">
-                    </a>
-                    <div class="social-media"></div>
-                    <div class="newsletter">
-                        <span>Tipy, techniki i nowości na rynku fotograficznym</span>
-                        <button>Newsletter</button>
-                    </div>
+                    <article>
+                        <a href="/" title="Santana Photographer">
+                            <img src="images/logo.svg" alt="Logo">
+                        </a>
+                        <div class="social-media">
+                            <img src="images/fb.svg" alt="facebook">
+                            <img src="images/twitter.svg" alt="twitter">
+                            <img src="images/instagram.svg" alt="instagram">
+                            <img src="images/behance.svg" alt="behance">
+                        </div>
+                        <div class="newsletter">
+                            <span>Tipy, techniki i nowości na rynku fotograficznym</span>
+                            <button>Newsletter</button>
+                        </div>
+                    </article>
                 </div>
             </footer>
     </div> <!-- container-->

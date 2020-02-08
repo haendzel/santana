@@ -1,1 +1,6 @@
-.contact { height: 86.3rem; background-color: #6e5fc9; background-image: radial-gradient(circle 1008px at center, #808bdb 0%, #645fc9 100%); }
+.contact { text-align: center; background-color: #6e5fc9; background-image: radial-gradient(circle 1008px at center, #808bdb 0%, #645fc9 100%); margin-bottom: 80px;
+    h1 { padding-top: 5rem; padding-bottom: 8rem; margin: 0;
+        &:after { content: ""; display: block; width: 68px; height: 5px; border-radius: 3px; background-color: #fff; }
+    }
+    .wrapper { padding-right: 44rem; padding-left: 44rem;}
+}
