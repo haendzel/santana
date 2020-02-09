@@ -1,6 +1,12 @@
 .icons { background-color: #fff; display: flex; justify-content: center;
-    article { padding-top: 93px; padding-bottom: 90px; display: flex; justify-content: flex-start; flex-wrap: wrap; }
+    .wrapper { 
+        @include bp(phablet) { padding-right: 15px; padding-left: 15px; }
+    }
+    article { padding-top: 93px; padding-bottom: 90px; display: flex; justify-content: flex-start; flex-wrap: wrap;
+        @include bp(phablet) { padding-top: 65px; padding-bottom: 65px; }
+    }
     .icon { flex: 1 0 211px; 
+        @include bp(phablet) { flex: 1 0 42%; margin: 0 15px 15px 15px; max-height: 136px; }
         &:nth-child(2n+2) {
             img { @include brand-svg-color; }
         }

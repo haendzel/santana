@@ -1,18 +1,31 @@
 form { width: 100%; 
     //span { display: block; width: 68px; height: 5px; border-radius: 3px; background-color: #fff; align-content: center;}
-    input, textarea, select { width: 48rem; border-radius: .8rem; color: $dark_gray_color; }
-    input[type=email], input[type=text], select { height: 6rem; padding: 0 0 0 2.5rem; font-size: 20px; margin-bottom: 3.5rem; }
-    input[type=radio] { width: 4rem; height: 2rem; border: none; font-size: 1.6rem; }
+    input, textarea, select { width: 48rem; border-radius: 10px; color: $dark_gray_color; 
+        @include bp($from: phablet, $to: mobile-s) { width: 93%; }
+    }
+    input[type=email], input[type=text], select { height: 60px; padding: 0 0 0 2.5rem; font-size: 20px; margin-bottom: 35px; }
+    input[type=radio] { width: 4rem; height: 2rem; border: none; font-size: 1.6rem;
+        @include bp($from: phablet, $to: mobile-s){ margin-top: 10px; }
+    }
     textarea { font-size: 20px; padding: 2.5rem 0 0 2.5rem; height: 22.5rem; }
-    select { @include select; width: 50rem; }
+    select { @include select; width: 50rem; 
+        @include bp(phablet) { width: 100%; }
+    }
     input[type=email] { margin-bottom: 0; }
 }
 
 .form-radio { font-size: 24px; color: #fff; font-weight: 300; letter-spacing: -0.12px; text-align: left; 
-    p { padding-top: 2.5rem; }
+    @include bp($from: phablet, $to: mobile-s) { font-size: 20px; margin-bottom: 30px; }
+    label { font-size: 14px; }
+    p { padding-top: 25px; 
+        @include bp(phablet) { margin: 0; }
+    }
 }
 
 .form-sending { padding-top: 8rem; color: #fff;
+    @include bp($from: phablet, $to: mobile-s) { padding-left: 15px; padding-right: 15px; text-align: left;}
     input[type=checkbox] { width: 4rem; height: 2rem; border: none; }
-    button { background: transparent; color: #fff; font-size: 30px; font-weight: 700; width: 39.6rem; height: 8.1rem; border-radius: .8rem; border: 3px solid #fff; margin-top: 5.3rem; margin-bottom: 8rem; }
+    button { background: transparent; color: #fff; font-size: 30px; font-weight: 700; width: 39.6rem; height: 8.1rem; border-radius: .8rem; border: 3px solid #fff; margin-top: 5.3rem; margin-bottom: 8rem;
+        @include bp(phablet) { width: 100%; font-size: 24px; } 
+    }
 }

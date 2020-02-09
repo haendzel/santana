@@ -2,5 +2,7 @@
     h1 { padding-top: 5rem; padding-bottom: 8rem; margin: 0;
         &:after { content: ""; display: block; width: 68px; height: 5px; border-radius: 3px; background-color: #fff; }
     }
-    .wrapper { padding-right: 44rem; padding-left: 44rem;}
+    .wrapper { padding-right: 44rem; padding-left: 44rem; 
+        @include bp($from: phablet, $to: mobile-s) { padding-right: 30px; padding-left: 30px; }
+    }
 }

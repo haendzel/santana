@@ -1,7 +1,7 @@
 .social-media { margin: .5rem 17rem 0 18rem; width: 100%;
     @include bp($from: phablet, $to: mobile-s) { margin: 0; margin-top: 6rem; }
     img { margin-right: 3.2rem; 
-        @include bp(phablet) {width: 41px; height: 41px; }
+        @include bp($from: phablet, $to: mobile-s) { width: 41px; height: 41px; }
         &:last-of-type { margin-right: 0; }
     }
 }

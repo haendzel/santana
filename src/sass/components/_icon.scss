@@ -2,5 +2,7 @@
     &:nth-child(2n+2) { background-color: #f6f6f6; }
     // &:nth-child(5n+5) { margin-right: 0; }
     // &:nth-last-child(-n+5) { margin-bottom: 0; }
-    svg, img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    svg, img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        @include bp(phablet) { height: 62px; }
+    }
 }
