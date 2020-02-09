@@ -2,6 +2,6 @@ h1 { font-size: 48px; color: #fff; font-weight: 700; }
 
 a {
     &:any-link { color: #000; text-decoration: none; 
-        &:hover { color: #6764cb; }  
+        &:hover { color: $brand_color; text-shadow: 0.02em 0px 0px $brand_color; }  
     }
 }
