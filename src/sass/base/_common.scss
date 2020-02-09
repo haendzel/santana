@@ -4,6 +4,4 @@ body { background-color: #fff; color: #000; font-family: 'Muli', 'sans-serif'; f
 
 .container { width: 100%; margin: 0; padding: 0; top: 0; left: 0; bottom: 0; right: 0; }
 
-.wrapper { padding-right: 34rem; padding-left: 34rem; 
-    @include bp(phablet) { padding: 1rem; }
-}
+.wrapper { padding-right: 34rem; padding-left: 34rem; }
