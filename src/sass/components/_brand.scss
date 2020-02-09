@@ -1,0 +1,3 @@
+.brand {
+    @include bp($from: phablet, $to: mobile-s) { margin: 0 auto;}
+}

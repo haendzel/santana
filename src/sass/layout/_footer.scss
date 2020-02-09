@@ -1,6 +1,7 @@
-footer { height: 30.2rem; background-color: #f0f0f0;
-    .wrapper { }
+footer { min-height: 30.2rem; background-color: #f0f0f0;
     .logo-2 { margin-top: -.5rem;}
-    article { display: flex; width: 100%; padding-top: 12rem; }
+    article { display: flex; width: 100%; padding-top: 12rem;
+        @include bp($from: phablet, $to: mobile-s) { padding-top: 5rem; flex-direction: column; }
+    }
 
 }
