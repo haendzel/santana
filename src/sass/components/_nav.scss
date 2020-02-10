@@ -1,9 +1,9 @@
 nav { 
     @include bp(phablet) { display: none; }
-    ul { display: flex; flex-direction: row; margin: 0;
+    ul { display: flex; flex-direction: row; margin: 0; padding-inline-start: 70px;  // <--- tylko do pixel perfectu, ale jesli brac pod uwage projekt graficzny pod 1920px
         li { font-size: 2.2rem; list-style-type: none; margin-right: 4.7rem; height: 140px; line-height: 140px; white-space: nowrap; letter-spacing: $header_letter_spacing;
-            &:first-of-type { margin-left: 10.5rem; }
-            &:last-of-type { margin-right: 12rem; }
+            /*&:first-of-type { margin-left: 10.5rem; }
+            &:last-of-type { margin-right: 12rem; }*/
         }
     }
 }

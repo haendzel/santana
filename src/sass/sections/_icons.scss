@@ -1,6 +1,7 @@
 .icons { background-color: #fff; display: flex; justify-content: center;
     .wrapper { padding-right: 32rem; padding-left: 32rem;
         @include bp(phablet) { padding-right: 15px; padding-left: 15px; }
+        @include bp($from: desktop, $to: tablet) { padding-right: 100px; padding-left: 100px; }
     }
     article { padding-top: 93px; padding-bottom: 46px; display: flex; justify-content: flex-start; flex-wrap: wrap;
         @include bp(phablet) { padding-top: 65px; padding-bottom: 65px; }
