@@ -1,0 +1,5 @@
+.fas { position: relative;
+    .fa-sort-down {
+        &:before { position: absolute !important; bottom: 2px !important; }
+    }
+}
