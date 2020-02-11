@@ -3,7 +3,7 @@ footer { min-height: 30.2rem; background-color: #f0f0f0;
         @include bp($from: phablet, $to: mobile-s) { padding-right: 50px; padding-left: 50px;}
     }
     .logo-2 { margin-top: -.5rem;}
-    article { display: flex; width: 100%; padding-top: 12rem;
+    article { display: flex; width: 100%; padding-top: 11.5rem;
         @include bp($from: phablet, $to: mobile-s) { padding-top: 40px; flex-direction: column; }
     }
 

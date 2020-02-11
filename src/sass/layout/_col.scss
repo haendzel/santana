@@ -1,4 +1,5 @@
 .col { display: flex; flex-direction: column; flex-basis: 100%; flex: 1; 
     @include bp($from: phablet, $to: mobile-s) { flex: 100%; }
-    select, textarea { margin-left: 1rem; }
+    select, textarea { margin-left: 1.3rem; }
+    .name { text-align: left; padding-left: 2.5rem; font-size: 14px; color: white; margin-bottom: 1rem; }
 }
