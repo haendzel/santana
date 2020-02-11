@@ -1,2 +1,23 @@
 @mixin brand-svg-color { filter: invert(42%) sepia(19%) saturate(1836%) hue-rotate(203deg) brightness(95%) contrast(88%); }
 @mixin select { appearance: none; background-color: #fff; }
+
+@mixin burger-squeeze {
+	&:before,
+	&:after { transition: transform $duration_default; }
+
+	&-label { transition: $duration_default $duration_fast; transition-property: opacity, transform; }
+
+	.menu-visible & {
+		&:before,
+		&:after { animation-duration: $duration_default; transform: none; }
+
+		&:before { animation-name: burger-squeeze-top; }
+		&-label { transition-delay: 0ms; opacity: 0; }
+		&:after { animation-name: burger-squeeze-bottom; }
+	}
+
+	@keyframes burger-squeeze-open-top {
+		0% { transform: none; }
+		50% { transform: translateY(#{.5 * ($burger_height - $burger_line_height)}); }
+	}
+}

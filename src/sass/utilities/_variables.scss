@@ -5,6 +5,17 @@ $standard_letter_spacing            : 0.01em;
 $standard_neg_letter_spacing        : -0.01em;
 $header_letter_spacing              : 0.03em;
 
+//TIMES
+$duration_default                 : 300ms;
+$duration_slow                    : 900ms;
+$duration_fast                    : 100ms;
+
+
+//TRANSITIONS
+$transition_default               : all $duration_default ease;
+$transition_slow                  : all $duration_slow ease;
+$transition_fast                  : all $duration_fast ease;
+
 //BREAKPOINTS
 $breakpoints : (
     mobile-s : 320,

@@ -7,6 +7,7 @@
         @include bp(phablet) { padding-top: 65px; padding-bottom: 65px; }
     }
     .icon { flex: 1 0 17%;  margin: 0 18px 45px 18px;
+        @include bp(mobile-s) { min-height: 260px; }
         @include bp(phablet) { flex: 40%; margin: 0 15px 25px; max-height: 136px; }
         &:nth-child(2n+2) {
             img { @include brand-svg-color; }

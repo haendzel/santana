@@ -1,6 +1,6 @@
 header { width: 100%; height: 14rem; display: flex; justify-content: space-between; text-shadow: 0.02em 0px 0px #000;
     .wrapper { padding-right: 30px; padding-left: 30px; }
-    @include bp(phablet) { height: 120px; justify-content: space-between; }
+    @include bp($from: portrait, $to: mobile-s) { height: 120px; justify-content: space-between; }
     a { @include bp(phablet) { width: 100%; }
 }
     img { height: 14rem; width: 19.6rem;
@@ -9,7 +9,7 @@ header { width: 100%; height: 14rem; display: flex; justify-content: space-betwe
 
     .nav, .nav-mobile { margin: auto 0; }
     .nav-lang { @include select; position: relative; color: #b7b7b7; border: 1px solid #dadada; border-radius: 8px; font-weight: 400; min-width: 10rem; height: 2.5rem; font-size: 22px; padding: 1.4rem 1.7rem;
-        @include bp(phablet) { display: none; }
+        @include bp(tablet) { display: none; }
         span { display: flex; justify-content: space-around; }
         img { width: 2.8rem; height: 1.7rem; margin-top: .5rem; }
     }
