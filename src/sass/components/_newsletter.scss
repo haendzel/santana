@@ -1,4 +1,4 @@
-.newsletter { margin-top: -3.8rem; letter-spacing: $standard_letter_spacing; font-weight: 700; text-shadow: 0.03em 0 0; display: block;
+.newsletter { margin-top: -3.8rem; letter-spacing: $normal_letter_spacing; font-weight: 700; text-shadow: 0.03em 0 0; display: block;
     @include bp($from: phablet, $to: mobile-s) { margin-top: 6rem; flex-direction: column; text-align: center; }
     button { width: 36.3rem; height: 8.1rem; margin-top: 2.5rem; font-size: 30px; border-radius: 10px; border: 3px solid #000; letter-spacing: 0.001em; background-color: transparent; color: #000; 
         &:hover { background-color: $brand_color; color: #fff; border: none; }
