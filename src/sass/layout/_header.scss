@@ -1,4 +1,4 @@
-header { width: 100%; /*height: 14rem;*/ display: flex; justify-content: space-between; flex-direction: row; text-shadow: 0.02em 0px 0px #000;
+header { width: 100%; height: 14rem; display: flex; justify-content: space-between; flex-direction: row; text-shadow: 0.02em 0px 0px #000;
     .wrapper { padding-right: 30px; padding-left: 30px; }
     @include bp($from: portrait, $to: mobile-s) { height: 120px; justify-content: space-between; }
     a { @include bp(phablet) { width: 100%; }
@@ -8,8 +8,9 @@ header { width: 100%; /*height: 14rem;*/ display: flex; justify-content: space-b
     }
 
     .nav, .nav-mobile { margin: auto 0; }
-    .nav-lang { @include select; position: relative; color: #b7b7b7; border: 1px solid #dadada; border-radius: 8px; font-weight: 400; min-width: 10rem; height: 2.5rem; font-size: 22px; padding: 1.4rem 1.7rem;
+    .nav-lang { @include select; border: 1px solid #dadada; border-radius: 8px; min-width: 10rem; height: 2.5rem; padding: 1.4rem 1.7rem;
         @include bp(tablet) { display: none; }
+        select { width: 100%; height: 100%; appearance: none; color: #b7b7b7; background-color: white; font-size: 22px; font-weight: 400; background:url('../../images/arrow_down.svg'); background-repeat: no-repeat; background-position: right; border-right: 5px solid #fff;}
         span { display: flex; justify-content: space-around; }
         img { width: 2.8rem; height: 1.7rem; margin-top: .5rem; }
     }
