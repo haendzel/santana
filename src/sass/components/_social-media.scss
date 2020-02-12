@@ -1,11 +1,16 @@
-.social-media { margin: .5rem 17rem 0 18rem; width: 100%;
+.social-media { width: 100%;
     @include bp($from: phablet, $to: mobile-s) { margin: 0; margin-top: 4rem; }
     a { margin-right: 3.2rem; 
-        &:last-child {
-            @include bp(phablet) { width: 50px; height: 31px; }
+        &:last-child { //ogarnac ikonki
+            img {
+                @include bp(phablet) { width: 50px; height: 31px; }
+            }
         }
-        @include bp(phablet) { width: 41px; height: 41px; margin-right: 27px; }
-        @include bp($from: phablet, $to: mobile-l) { margin-right: 45px;}
-        &:last-of-type { margin-right: 0; padding-bottom: 5px; }
+    @include bp(phablet) { width: 41px; height: 41px; margin-right: 27px; }
+    @include bp($from: phablet, $to: mobile-l) { margin-right: 45px;}
+    img { padding-top: 5px; }
+        &:last-child {
+            img, svg { padding-bottom: 5px; }
+        }
     }
 }

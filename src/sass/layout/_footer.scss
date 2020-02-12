@@ -4,6 +4,9 @@ footer { min-height: 30.2rem; background-color: #f0f0f0;
     }
     .logo-2 { margin-top: -.5rem;}
     article { display: flex; width: 100%; padding-top: 11.5rem;
+        .brand { flex: 1 0 30%; }
+        .social-media { flex: 1 0 40%; }
+        .newsletter { flex: 1 0 28%; }
         @include bp($from: portrait, $to: mobile-s) { padding-top: 60px; flex-direction: column; }
     }
 

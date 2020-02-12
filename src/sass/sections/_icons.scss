@@ -10,7 +10,7 @@
     .icon { flex: 1 0 15%;  margin: 0 22.5px 45px; max-width: 211px;
         @include bp(mobile-s) { margin: 0 5px 10px !important; }
         @include bp(phablet) { flex: 1 0 40%; margin: 0 15px 25px; max-height: 136px; }
-        @include bp(portrait) { margin: 0 9px 18px; max-height: 136px; }
+        @include bp($only: portrait) { margin: 0 9px 18px; max-height: 136px; }
         &:nth-child(2n+2) {
             img { @include brand-svg-color; }
         }
