@@ -8,6 +8,6 @@
     }
     .wrapper { padding-right: 44rem; padding-left: 44rem; 
         @include bp($from: portrait, $to: mobile-s) { padding-right: 30px; padding-left: 30px; }
-        @include bp($from: desktop, $to: tablet) { padding-right: 180px; padding-left: 180px; }
+        @include bp($from: laptop-l, $to: tablet) { padding-right: 180px; padding-left: 180px; }
     }
 }

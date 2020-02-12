@@ -1,1 +1,3 @@
-.row { display: flex; flex-direction: row; flex-wrap: wrap; width: 100%; }
+.row { display: flex; flex-direction: row; flex-wrap: wrap; width: 100%; 
+    @include bp($from: tablet, $to: portrait) { flex-direction: column; }
+}

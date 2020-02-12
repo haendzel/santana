@@ -1,5 +1,5 @@
 .col { display: flex; flex-direction: column; flex-basis: 100%; flex: 1; 
-    @include bp($from: phablet, $to: mobile-s) { flex: 100%; }
+    @include bp($from: tablet, $to: mobile-s) { flex: 100%; margin: auto; }
     select, textarea { margin-left: 1.3rem; 
         @include bp(phablet) { margin-left: 0; }
     }

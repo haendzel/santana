@@ -1,14 +1,14 @@
 .social-media { width: 100%;
-    @include bp($from: phablet, $to: mobile-s) { margin: 0; margin-top: 4rem; }
+    @include bp($from: portrait, $to: mobile-s) { margin: 0; margin-top: 4rem; }
     a { margin-right: 3.2rem; 
-        &:last-child { //ogarnac ikonki
+        &:last-child { margin-right: 0;
             img {
-                @include bp(phablet) { width: 50px; height: 31px; }
+                @include bp(portrait) { width: 50px; height: 31px; }
             }
         }
-    @include bp(phablet) { width: 41px; height: 41px; margin-right: 27px; }
-    @include bp($from: phablet, $to: mobile-l) { margin-right: 45px;}
-    img { padding-top: 5px; }
+    @include bp(portrait) {margin-right: 27px; }
+    @include bp($from: portrait, $to: mobile-l) { margin-right: 45px;}
+    img { padding-top: 5px; width: 41px; height: 41px; }
         &:last-child {
             img, svg { padding-bottom: 5px; }
         }
