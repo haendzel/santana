@@ -1,12 +1,13 @@
 .contact { text-align: center; background-color: #6e5fc9; background-image: radial-gradient(circle 1008px at center, #808bdb 0%, #645fc9 100%); margin-bottom: 80px;
+    @include bp(phablet) { margin-bottom: 70px; }
     h1 { padding-top: 5rem; padding-bottom: 5.9rem; margin: 0; position: relative; letter-spacing: $standard_letter_spacing;
-        @include bp(phablet) { font-size: 36px; padding-top: 30px; }
+        @include bp(phablet) { font-size: 36px; padding-top: 50px; padding-bottom: 65px; }
         &:after { content: ""; display: block; width: 68px; height: 5px; border-radius: 3px; background-color: #fff; position: absolute; bottom: 4.1rem; left: 46.7%;
-            @include bp(phablet) { left: 40%; } 
+            @include bp(phablet) { left: 38%; bottom: 45px; } 
         }
     }
     .wrapper { padding-right: 44rem; padding-left: 44rem; 
-        @include bp($from: phablet, $to: mobile-s) { padding-right: 30px; padding-left: 30px; }
+        @include bp($from: portrait, $to: mobile-s) { padding-right: 30px; padding-left: 30px; }
         @include bp($from: desktop, $to: tablet) { padding-right: 180px; padding-left: 180px; }
     }
 }

@@ -1,8 +1,38 @@
 .icon { position: relative; align-items: center; width: 21.1rem; height: 21.1rem; background:#e6e6e6;
     &:nth-child(2n+2) { background-color: #f6f6f6; }
-    // &:nth-child(5n+5) { margin-right: 0; }
-    // &:nth-last-child(-n+5) { margin-bottom: 0; }
+    @include bp(phablet) { 
+        &:nth-of-type(1) { order: 1; 
+            svg, img { height: 67px; }
+        }
+        &:nth-of-type(2) { order: 2;
+            svg, img { height: 62px; }
+        }
+        &:nth-of-type(3) { order: 4;
+            svg, img { height: 78px; }
+        }
+        &:nth-of-type(4) { order: 3;
+            svg, img { height: 62px; }
+        }
+        &:nth-of-type(5) { order: 5;
+            svg, img { height: 74px; }
+        }
+        &:nth-of-type(6) { order: 6; 
+            svg, img { height: 65px; }
+        }
+        &:nth-of-type(7) { order: 8;
+            svg, img { height: 84px; }
+        }
+        &:nth-of-type(8) { order: 7;
+            svg, img { height: 86px; }
+        }
+        &:nth-of-type(9) { order: 9; 
+            svg, img { height: 56px; }
+        }
+        &:nth-of-type(10) { order: 10; 
+            svg, img { height: 60px; }
+        }
+    }
     svg, img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-        @include bp(phablet) { height: 62px; }
+        @include bp(portrait) { height: 70%; width: 70%; };
     }
 }

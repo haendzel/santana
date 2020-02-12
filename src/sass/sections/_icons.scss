@@ -1,14 +1,16 @@
 .icons { background-color: #fff; display: flex; justify-content: center;
     .wrapper { padding-right: 32rem; padding-left: 32rem;
         @include bp(phablet) { padding-right: 15px; padding-left: 15px; }
-        @include bp($from: desktop, $to: tablet) { padding-right: 100px; padding-left: 100px; }
+        @include bp($only: portrait) { padding-right: 50px; padding-left: 50px; }
+        @include bp($from: desktop, $to: tablet) { padding-right: 100px; padding-left: 100px; } //poprawić wrapper !!!
     }
     article { padding-top: 93px; padding-bottom: 46px; display: flex; justify-content: flex-start; flex-wrap: wrap;
-        @include bp(phablet) { padding-top: 65px; padding-bottom: 65px; }
+        @include bp(phablet) { padding-top: 65px; padding-bottom: 47px; }
     }
     .icon { flex: 1 0 15%;  margin: 0 22.5px 45px; max-width: 211px;
-        @include bp(mobile-s) { min-height: 260px; }
-        @include bp(phablet) { flex: 40%; margin: 0 15px 25px; max-height: 136px; }
+        @include bp(mobile-s) { margin: 0 5px 10px !important; }
+        @include bp(phablet) { flex: 1 0 40%; margin: 0 15px 25px; max-height: 136px; }
+        @include bp(portrait) { margin: 0 9px 18px; max-height: 136px; }
         &:nth-child(2n+2) {
             img { @include brand-svg-color; }
         }
