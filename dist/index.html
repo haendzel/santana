@@ -14,8 +14,27 @@
 
 <body>
     <div class="container">
-        <div class="wrapper">
-            <header>
+        <header class="header">
+            <a class="logo" href="/" title="Santana Photographer">
+                <img class='logo-1' src="images/logo.svg" alt="Logo">
+            </a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                <li><a href="#" title="O mnie">O mnie</a></li>
+                <li><a href="#" title="Współpraca">Współpraca</a></li>
+                <li><a href="#" title="Portfolio">Portfolio</a></li>
+                <li><a href="#" title="Opinie">Opinie</a></li>
+                <li><a href="#" title="Kontakt">Kontakt</a></li>
+            </ul>
+            <div class="nav-lang">
+                <span>PL <img src="../../images/pl.svg"><i class="fas fa-sort-down"></i></span>
+                <div class="dropdown-content">
+                    <a href="#" class="panel-en">EN </a><img src="images/en.svg" alt="english flag">
+                </div>
+            </div>
+        </header>
+            <!-- <header>
                 <a class="logo"href="/" title="Santana Photographer">
                     <img class='logo-1' src="images/logo.svg" alt="Logo">
                 </a>
@@ -35,14 +54,14 @@
                 </nav>
                 <div class="nav">
                     <div class="nav-lang">
-                        <select name="langs">
-                            <option data-content="<span style='background-image:url(images/pl.png)'></span>" value="pl">PL</option>
-                            <option data-content="background-image:url(images/pl.png);" value="en">EN</option>
-                        </select>
+                        <span>PL <img src="../../images/pl.svg"><i class="fas fa-sort-down"></i></span>
+                        <div class="dropdown-content">
+                                <a href="#" class="panel-en">EN </a><img src="images/en.svg" alt="english flag">
+                        </div>
+                    </div>
                     </div>
                 </div>
-            </header>
-        </div> <!-- wrapper -->
+            </header> -->
             <section class="gallery">
                     <figure><img src="images/1.png" alt="photo"></figure>
                     <figure><img src="images/2.png" alt="photo"></figure>

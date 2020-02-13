@@ -2,15 +2,14 @@
     @include bp($from: portrait, $to: mobile-s) { margin: 0; margin-top: 4rem; }
     a { margin-right: 3.2rem; 
         &:last-child { margin-right: 0;
-            img {
-                @include bp(portrait) { width: 50px; height: 31px; }
-            }
+            img { width: 50px; height: 31px; }
         }
+    }
+
     @include bp(portrait) {margin-right: 27px; }
     @include bp($from: portrait, $to: mobile-l) { margin-right: 45px;}
     img { padding-top: 5px; width: 41px; height: 41px; }
         &:last-child {
             img, svg { padding-bottom: 5px; }
-        }
     }
 }
