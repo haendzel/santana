@@ -6,35 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/main.min.css">
     <script src="https://kit.fontawesome.com/4dd4f20c09.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-    <title>Santana Photographer</title>
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <a class="logo" href="/" title="Santana Photographer">
-                <img class='logo-1' src="images/logo.svg" alt="Logo">
-            </a>
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
-            <ul class="menu">
-                <li><a href="#" title="O mnie">O mnie</a></li>
-                <li><a href="#" title="Współpraca">Współpraca</a></li>
-                <li><a href="#" title="Portfolio">Portfolio</a></li>
-                <li><a href="#" title="Opinie">Opinie</a></li>
-                <li><a href="#" title="Kontakt">Kontakt</a></li>
-            </ul>
-            <div class="nav-lang">
-                <span>PL <img src="../../images/pl.svg"><i class="fas fa-sort-down"></i></span>
-                <div class="dropdown-content">
-                    <a href="#" class="panel-en">EN </a><img src="images/en.svg" alt="english flag">
-                </div>
-            </div>
-        </header>
-            <!-- <header>
+    <div class="wrapper">
+        <header>
                 <a class="logo"href="/" title="Santana Photographer">
                     <img class='logo-1' src="images/logo.svg" alt="Logo">
                 </a>
@@ -42,6 +21,23 @@
                     <button class="burger">
                         <span class="burger-label">Menu</span>
                     </button>
+                    <div class="dropdown-content">
+                        <ul class="menu-mobile-list" id="menu-mobile" role="navigation">
+                            <li><a href="#" title="O mnie">O mnie</a></li>
+                            <li><a href="#" title="Współpraca">Współpraca</a></li>
+                            <li><a href="#" title="Portfolio">Portfolio</a></li>
+                            <li><a href="#" title="Opinie">Opinie</a></li>
+                            <li><a href="#" title="Kontakt">Kontakt</a></li>
+                            <li>
+                                <div class="nav-lang">
+                                <span>PL <img src="../../images/pl.svg"><i class="fas fa-sort-down"></i></span>
+                                    <div class="dropdown-lang">
+                                        <a href="#" class="panel-en">EN </a><img src="images/en.svg" alt="english flag">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
                 <nav>
                     <ul id="menu" role="navigation">
@@ -50,18 +46,18 @@
                         <li><a href="#" title="Portfolio">Portfolio</a></li>
                         <li><a href="#" title="Opinie">Opinie</a></li>
                         <li><a href="#" title="Kontakt">Kontakt</a></li>
+                        <li></li>
                     </ul>
                 </nav>
-                <div class="nav">
-                    <div class="nav-lang">
-                        <span>PL <img src="../../images/pl.svg"><i class="fas fa-sort-down"></i></span>
-                        <div class="dropdown-content">
-                                <a href="#" class="panel-en">EN </a><img src="images/en.svg" alt="english flag">
-                        </div>
-                    </div>
+                <div class="nav-lang">
+                    <span>PL <img src="../../images/pl.svg"><i class="fas fa-sort-down"></i></span>
+                    <div class="dropdown-lang">
+                        <a href="#" class="panel-en">EN </a><img src="images/en.svg" alt="english flag">
                     </div>
                 </div>
-            </header> -->
+            </div> <!--- wrapper -->
+        </header>    
+            
             <section class="gallery">
                     <figure><img src="images/1.png" alt="photo"></figure>
                     <figure><img src="images/2.png" alt="photo"></figure>
@@ -145,7 +141,7 @@
                 </div>
             </footer>
     </div> <!-- container-->
-    <!-- <scipt src="main.min.js"></scipt> -->
+    <script src="js/main.min.js"></script> 
 </body>
 
 </html>
