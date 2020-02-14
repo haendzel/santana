@@ -1,10 +1,10 @@
 nav { 
-    @include bp(tablet) { display: none; }
+    @include bp(tablet) { display: none;  }
     ul { display: flex; margin: 0; padding-inline-start: 3.2rem; margin: 0; list-style: none;
-        @include bp(tablet) { position: absolute; flex-direction: column; padding: 0; background-color: #fff; width: 100%; margin: 0 auto; text-align: center; left: 0; top: 119px; }
+        @include bp(tablet) { position: absolute; flex-direction: column; padding: 0; background-color: #fff; width: 100%; margin: 0 auto; text-align: center; left: 0; top: 119px; padding-top: 28px; }
         li { font-size: 2.2rem; height: 14rem; line-height: 14rem; white-space: nowrap; letter-spacing: $header_letter_spacing;
             &:last-child { 
-                @include bp(tablet) { height: auto; padding-bottom: 70px; padding-top: 70px; }
+                @include bp(tablet) { height: auto; padding-bottom: 70px; padding-top: 50px; }
             }
             @include bp(tablet) { font-size: 30px; line-height: 60px; height: 60px; }
         }

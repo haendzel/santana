@@ -1,5 +1,5 @@
 .newsletter { margin-top: -3.8rem; letter-spacing: $normal_letter_spacing; font-weight: 700; text-shadow: 0.03em 0 0; display: block;
-    @include bp($from: portrait, $to: mobile-s) { margin-top: 6rem; flex-direction: column; text-align: center; }
+    @include bp($from: portrait, $to: mobile-s) { margin-top: 5.8rem; flex-direction: column; text-align: center; }
     span { 
         @include bp(mobile) { display: table; width: 195px; margin: auto; }
         @include bp($from: portrait, $to: mobile-l) { width: 90%; }

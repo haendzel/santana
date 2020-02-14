@@ -5,7 +5,7 @@
         @include bp($from: desktop, $to: tablet) { padding-right: 100px; padding-left: 100px; } //poprawić wrapper !!!
     }
     article { padding-top: 93px; padding-bottom: 46px; display: flex; justify-content: flex-start; flex-wrap: wrap;
-        @include bp(phablet) { padding-top: 65px; padding-bottom: 47px; }
+        @include bp(phablet) { padding-top: 65px; padding-bottom: 45px; }
     }
     .icon { flex: 1 0 15%;  margin: 0 22.5px 45px; max-width: 211px;
         @include bp(mobile-s) { margin: 0 5px 10px !important; }

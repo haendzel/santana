@@ -1,6 +1,5 @@
 .wrapper {
-    @include bp(phablet) { padding-right: 30px; padding-left: 30px; }
-    @include bp(portrait) { padding-right: 50px; padding-left: 50px; }
+    @include bp(portrait) { padding-right: 30px; padding-left: 30px; }
     @include bp($from: desktop, $to: tablet) { padding-right: 100px; padding-left: 100px; }
     // .gallery { padding: 0; margin: 0; }
 }

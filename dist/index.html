@@ -18,10 +18,12 @@
                     <img class='logo-1' src="images/logo.svg" alt="Logo">
                 </a>
                 <nav class="nav-mobile">
-                    <button class="burger">
-                        <span class="burger-label">Menu</span>
+                    <button class="burger" aria-expanded="false">
+                        <span></span>
+                        <span class="center"></span>
+                        <span></span>
                     </button>
-                    <div class="dropdown-content">
+                    <div class="dropdown-content" style="display: none">
                         <ul class="menu-mobile-list" id="menu-mobile" role="navigation">
                             <li><a href="#" title="O mnie">O mnie</a></li>
                             <li><a href="#" title="Współpraca">Współpraca</a></li>
@@ -29,10 +31,10 @@
                             <li><a href="#" title="Opinie">Opinie</a></li>
                             <li><a href="#" title="Kontakt">Kontakt</a></li>
                             <li>
-                                <div class="nav-lang">
-                                <span>PL <img src="../../images/pl.svg"><i class="fas fa-sort-down"></i></span>
+                                <div class="language-panel">
+                                <button class="nav-lang">PL <img src="../../images/pl.svg"><i class="fas fa-sort-down"></i></button>
                                     <div class="dropdown-lang">
-                                        <a href="#" class="panel-en">EN </a><img src="images/en.svg" alt="english flag">
+                                        <a href="#" class="panel-en">EN </a><img src="images/pl.svg" alt="english flag">
                                     </div>
                                 </div>
                             </li>
@@ -52,7 +54,7 @@
                 <div class="nav-lang">
                     <span>PL <img src="../../images/pl.svg"><i class="fas fa-sort-down"></i></span>
                     <div class="dropdown-lang">
-                        <a href="#" class="panel-en">EN </a><img src="images/en.svg" alt="english flag">
+                        <a href="#" class="panel-en">EN </a><img src="images/pl.svg" alt="english flag">
                     </div>
                 </div>
             </div> <!--- wrapper -->

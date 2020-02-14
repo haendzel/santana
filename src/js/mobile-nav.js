@@ -1,14 +1,18 @@
 const burger = document.querySelector('button.burger');
 const mobileNav = document.querySelector('.dropdown-content');
-let clickInButton = 0;
 
 const dropdownMenuMobile = () => {
-    if (clickInButton % 2 == 0) {
-        mobileNav.style = 'display: block';
+    let aria = burger.getAttribute("aria-expanded");
+    if (aria === "true") {
+        mobileNav.style.display = "none";
+        burger.classList.remove('show');
+        aria = "false";
     } else {
-        mobileNav.style = 'display: none;';
+        aria = "true";
+        mobileNav.style.display = "block";
+        burger.classList.add('show');
     }
-    clickInButton++;
+    burger.setAttribute("aria-expanded", aria);
 }
 
 burger.addEventListener('click', dropdownMenuMobile)
