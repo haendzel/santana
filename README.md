@@ -1,6 +1,6 @@
 # santana
 
-Work in progress. Demo is coming. 📺 
+![gif](modularity.gif)
 
 |Technology I used in this project: |
 |------------|
