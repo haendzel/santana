@@ -1,6 +1,6 @@
 # santana
 
-![gif](modularity.gif)
+![gif](images/santana.gif)
 
 |Technology I used in this project: |
 |------------|
