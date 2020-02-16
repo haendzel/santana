@@ -1,6 +1,6 @@
 # santana
 
-![gif](images/santana.gif)
+![gif](santana.gif)
 
 |Technology I used in this project: |
 |------------|
